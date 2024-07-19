@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UnitConverter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Value Calculator</title>
+</head>
+<body>
+    <hr>
+    <header>
+        <img src="images/Default_A_futuristic_calculator_icon_crafted_in_3D_CGI_showcas_3.jpg" alt="">
+        <h1>Value</h1>
+        <p>Calculator</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="bar">
+        <ul class="cal-link">
+            <li><a href="Basiccal.html">Basic Calculator</a></li>
+            <li><a href="Scientificcal.html">Scientific  Calculator</a></li>
+            <li><a href="UnitConverter.html">Unit Converter</a></li>
+        </ul>
+        <ul class="social-link">
+            <li><a href="https://facebook.com" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a></li>
+            <li><a href="https://twitter.com" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a></li>
+            <li><a href="https://instagram.com" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a></li>
+            <li><a href="https://linkedin.com" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a></li>
+        </ul>
+    </div>
+    <div class="selector">
+        <div class="container">
+            <h2>Unit Converter</h2>
+            <div class="calculator">
+                <div class="input-group">
+                    <select id="unitType" onchange="updateUnits()">
+                        <option value="length">Length</option>
+                        <option value="area">Area</option>
+                        <option value="data-transfer-rate">Data transfer rate</option>
+                        <option value="digital-storage">Digital storage</option>
+                        <option value="energy">Energy</option>
+                        <option value="frequency">Frequency</option>
+                        <option value="fuel-economy">Fuel Economy</option>
+                        <option value="mass">Mass</option>
+                        <option value="plane-angle">Plane angle</option>
+                        <option value="pressure">Pressure</option>
+                        <option value="speed">Speed</option>
+                        <option value="temperature">Temperature</option>
+                        <option value="time">Time</option>
+                        <option value="volume">Volume</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="inputValue" value="1" oninput="convertUnits()">
+                    <select id="inputUnit" onchange="convertUnits()">
+                    </select>
+                </div>
+                <div class="input-group3">
+                    <span>=</span>
+                    <input type="number" id="outputValue" readonly>
+                    <select id="outputUnit" onchange="convertUnits()">
+                    </select>
+                </div>
+                <div class="formula">
+                    <span id="F">Formula:</span>
+                    <span id="formulaText" onchange="convertUnits()"></span>
+                </div>
+            </div>
+            <div class="line">
+                 <li></li>
+                 <li></li>
+                 <li></li>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: <a href="mailto:info@valuecalculator.com">info@valuecalculator.com</a></p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

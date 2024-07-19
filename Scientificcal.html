@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Scientificcal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Scintefic calculator</title>
+</head>
+<body>
+    <hr>
+    <header>
+        <img src="images/Default_A_futuristic_calculator_icon_crafted_in_3D_CGI_showcas_3.jpg" alt="">
+        <h1>Value</h1>
+        <p>Calculator</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="bar">
+        <ul class="cal-link">
+            <li><a href="Basiccal.html">Basic Calculator</a></li>
+            <li><a href="Scientificcal.html">Scientific  Calculator</a></li>
+            <li><a href="UnitConverter.html">Unit Converter</a></li>
+        </ul>
+        <ul class="social-link">
+            <li><a href="https://facebook.com" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a></li>
+            <li><a href="https://twitter.com" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a></li>
+            <li><a href="https://instagram.com" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a></li>
+            <li><a href="https://linkedin.com" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="output">
+            <button id="del"  onclick="del()">CE</button>
+            <button onclick="fact()">x!</button>
+            <button onclick="display('(')">(</button>
+            <button onclick="display(')')">)</button>
+            <button onclick="display('%')">%</button>
+            <button id="clear"  onclick="Clear()">AC</button>
+            <button onclick="sin()">sin</button>
+            <button onclick="pi()">π</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="log()">log</button>
+            <button onclick="sqrt()">√</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="e()">e</button>
+            <button onclick="display('^')">^</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="calculate()" class="equal">=</button>
+            <button onclick="display('+')">+</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contact us: <a href="mailto:info@valuecalculator.com">info@valuecalculator.com</a></p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
